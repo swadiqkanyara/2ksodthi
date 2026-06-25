@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Lakhs Chit Fund Management</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-emerald-700 text-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm font-arabic tracking-wide text-emerald-100 mb-1">بسم الله الرحمان الرحيم</p>
+            <h1 class="text-2xl font-bold tracking-wide">💰 2 LAKHS CHIT FUND 💰</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- FIRST PAGE: Scheme & Admin Info (Visible on Load) -->
+        <div id="infoPage" class="space-y-6">
+            
+            <!-- Chit Fund Details -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-600">
+                <h2 class="text-xl font-bold text-emerald-700 mb-3">📋 Chit Fund Details</h2>
+                <div class="space-y-3 text-gray-700 text-lg">
+                    <p>• <strong>Total Amount (Chit Value):</strong> ₹2,00,000 (2 Lakhs)</p>
+                    <p>• <strong>Total Duration:</strong> 27 Months</p>
+                    <p>• <strong>Monthly Installment:</strong> ₹7,500</p>
+                    <p class="text-amber-700 font-semibold bg-amber-50 p-2 rounded border border-amber-200 text-base inline-block">
+                        ⚠️ Note: Opportunity only for trusted members.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Organizer Details -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-600">
+                <h2 class="text-xl font-bold text-emerald-700 mb-3">👤 Organizer & Contact Details</h2>
+                <div class="space-y-2 text-base">
+                    <p><strong>Organizer:</strong> Usman Nizami Uddabettu</p>
+                    <p><strong>Contact Number 1:</strong> <a href="tel:8867467405" class="text-emerald-600 font-bold hover:underline">8867467405</a></p>
+                    <p><strong>Contact Number 2:</strong> <a href="tel:8495872405" class="text-emerald-600 font-bold hover:underline">8495872405</a></p>
+                </div>
+            </div>
+
+            <!-- Continue Button -->
+            <div class="text-center pt-4">
+                <button onclick="showDashboard()" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-emerald-700 shadow-lg transform hover:scale-105 transition duration-200 cursor-pointer">
+                    Continue →
+                </button>
+            </div>
+        </div>
+
+
+        <!-- SECOND PAGE: Dashboard (Visible after clicking Continue) -->
+        <div id="dashboardPage" class="hidden space-y-6">
+            
+            <!-- Back Button -->
+            <button onclick="showInfo()" class="text-emerald-600 font-semibold hover:underline flex items-center gap-1 cursor-pointer mb-2">
+                ← Back to Main Info
+            </button>
+
+            <!-- Big Status Banner -->
+            <div class="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-6 rounded-2xl shadow-md text-center">
+                <p class="text-sm uppercase tracking-wider font-semibold text-amber-100 mb-1">Current Status</p>
+                <h2 class="text-3xl md:text-4xl font-black">1st Month Chit Auction</h2>
+                <p class="text-xl font-medium text-amber-50 mt-1">📅 June 2026</p>
+            </div>
+
+            <!-- Grid Layout for Boxes -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Box 1: Members List (Scrollable) -->
+                <div class="bg-white p-5 rounded-xl shadow border-t-4 border-blue-500 flex flex-col">
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">👥 Members List (21 / 27)</h3>
+                    <div class="overflow-y-auto max-h-80 pr-2 divide-y divide-gray-100 text-sm">
+                        <div class="py-2 flex justify-between"><span>1. Usman Nizami</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>2. Yaseen Ahsani</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>3. Ashraf Kuppetti</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>4. Yahkoob Uppinangadi</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>5. Mustafa U</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>6. Nizamuddin U</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>7. Noora</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>8. Mufsil</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>9. Mansur Saadi</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>10. Ansar Plama</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>11. Daud U</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>12. Yahya Sinwar</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>13. Ayan</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>14. Aman</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>15. Fathima</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>16. Sadik Saadi</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>17. Mansur Markaz Nagar</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>18. Murshida</span> <span class="text-green-600 font-bold">Paid ✅</span></div>
+                        <div class="py-2 flex justify-between"><span>19. Jawagal Kalandar</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>20. Hyder uh</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between"><span>21. Siraj Mansur</span> <span class="text-amber-600 font-medium">Pending</span></div>
+                        <div class="py-2 flex justify-between text-gray-400 italic"><span>22. Available</span> <span>---</span></div>
+                        <div class="py-2 flex justify-between text-gray-400 italic"><span>23. Available</span> <span>---</span></div>
+                        <div class="py-2 flex justify-between text-gray-400 italic"><span>24. Available</span> <span>---</span></div>
+                        <div class="py-2 flex justify-between text-gray-400 italic"><span>25. Available</span> <span>---</span></div>
+                        <div class="py-2 flex justify-between text-gray-400 italic"><span>26. Available</span> <span>---</span></div>
+                        <div class="py-2 flex justify-between text-gray-400 italic"><span>27. Available</span> <span>---</span></div>
+                    </div>
+                </div>
+
+                <!-- Box 2: Months Progress -->
+                <div class="bg-white p-5 rounded-xl shadow border-t-4 border-amber-500">
+                    <h3 class="text-lg font-bold text-amber-700 mb-3">📅 Chit Months</h3>
+                    <div class="grid grid-cols-2 gap-2 text-sm text-center">
+                        <div class="bg-amber-50 p-2 rounded border border-amber-200 font-medium">Total: 27 Months</div>
+                        <div class="bg-green-50 p-2 rounded border border-green-200 font-medium text-green-700">Completed: 01</div>
+                    </div>
+                </div>
+
+                <!-- Box 3: Collected Fund Details (UPDATED TO 11 MEMBERS) -->
+                <div class="bg-white p-5 rounded-xl shadow border-t-4 border-emerald-500">
+                    <h3 class="text-lg font-bold text-emerald-700 mb-3">💰 Collected Fund Details</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span>Monthly Installment:</span>
+                            <span class="font-bold">₹7,500</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Paid Members:</span>
+                            <span class="font-bold text-green-600">11 Members</span>
+                        </div>
+                        <div class="flex justify-between text-emerald-600 font-bold border-t pt-2 text-base">
+                            <span>Total Collected Amount:</span>
+                            <span>₹82,500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 4: Auction Winners -->
+                <div class="bg-white p-5 rounded-xl shadow border-t-4 border-rose-500">
+                    <h3 class="text-lg font-bold text-rose-700 mb-3">🏆 Auction Winners</h3>
+                    <table class="w-full text-sm text-left">
+                        <thead>
+                            <tr class="border-b text-gray-500">
+                                <th class="pb-2">Month</th>
+                                <th class="pb-2">Name</th>
+                                <th class="pb-2 text-right">Amount Claimed</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr>
+                                <td class="py-2">Month 1</td>
+                                <td class="py-2 text-gray-400">In Progress...</td>
+                                <td class="py-2 text-right text-rose-600 font-medium">₹0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JavaScript code -->
+    <script>
+        function showDashboard() {
+            document.getElementById('infoPage').classList.add('hidden');
+            document.getElementById('dashboardPage').classList.remove('hidden');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function showInfo() {
+            document.getElementById('dashboardPage').classList.add('hidden');
+            document.getElementById('infoPage').classList.remove('hidden');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
