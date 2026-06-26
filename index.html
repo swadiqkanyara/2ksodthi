@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 LAKHS CHIT FUND MANAGEMENT</title>
-    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -12,7 +11,6 @@
 </head>
 <body class="bg-gray-100 text-gray-800 uppercase">
 
-    <!-- Header Section -->
     <header class="bg-emerald-700 text-white py-4 shadow-lg">
         <div class="container mx-auto px-4 text-center">
             <p class="text-sm font-arabic tracking-wide text-emerald-100 mb-1 normal-case">بسم الله الرحمان الرحيم</p>
@@ -22,10 +20,8 @@
 
     <main class="container mx-auto px-4 py-8 max-w-4xl">
         
-        <!-- FIRST PAGE: Scheme & Admin Info (Visible on Load) -->
         <div id="infoPage" class="space-y-6">
             
-            <!-- Chit Fund Details -->
             <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-600">
                 <h2 class="text-xl font-bold text-emerald-700 mb-3">📋 CHIT FUND DETAILS</h2>
                 <div class="space-y-3 text-gray-700 text-lg">
@@ -38,7 +34,6 @@
                 </div>
             </div>
 
-            <!-- Organizer Details -->
             <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-600">
                 <h2 class="text-xl font-bold text-emerald-700 mb-3">👤 ORGANIZER & CONTACT DETAILS</h2>
                 <div class="space-y-2 text-base">
@@ -48,7 +43,6 @@
                 </div>
             </div>
 
-            <!-- Continue Button -->
             <div class="text-center pt-4">
                 <button onclick="showDashboard()" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-emerald-700 shadow-lg transform hover:scale-105 transition duration-200 cursor-pointer">
                     CONTINUE →
@@ -57,50 +51,45 @@
         </div>
 
 
-        <!-- SECOND PAGE: Dashboard (Visible after clicking Continue) -->
         <div id="dashboardPage" class="hidden space-y-6">
             
-            <!-- Back Button -->
             <button onclick="showInfo()" class="text-emerald-600 font-semibold hover:underline flex items-center gap-1 cursor-pointer mb-2">
                 ← BACK TO MAIN INFO
             </button>
 
-            <!-- Big Status Banner -->
             <div class="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-6 rounded-2xl shadow-md text-center">
                 <p class="text-sm uppercase tracking-wider font-semibold text-amber-100 mb-1">CURRENT STATUS</p>
                 <h2 class="text-3xl md:text-4xl font-black">1ST MONTH CHIT AUCTION</h2>
                 <p class="text-xl font-medium text-amber-50 mt-1">📅 JUNE 2026</p>
             </div>
 
-            <!-- Grid Layout for Boxes -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
-                <!-- Box 1: Members List (Scrollable) -->
                 <div class="bg-white p-5 rounded-xl shadow border-t-4 border-blue-500 flex flex-col">
-                    <h3 class="text-lg font-bold text-blue-700 mb-3">👥 MEMBERS LIST (21 / 27)</h3>
+                    <h3 class="text-lg font-bold text-blue-700 mb-3">👥 MEMBERS LIST (22 / 27)</h3>
                     <div class="overflow-y-auto max-h-80 pr-2 divide-y divide-gray-100 text-sm">
                         <div class="py-2 flex justify-between"><span>1. USMAN NIZAMI</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>2. YASEEN AHSANI</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>3. ASHRAF KUPPETTI</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>4. YAHKOOB UPPINANGADI</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>5. MUSTAFA U</span> <span class="text-amber-600 font-medium">PENDING</span></div>
-                        <div class="py-2 flex justify-between"><span>6. NIZAMUDDIN U</span> <span class="text-amber-600 font-medium">PENDING</span></div>
+                        <div class="py-2 flex justify-between"><span>6. NIZAMUDDIN U</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>7. NOORA</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>8. MUFSIL</span> <span class="text-amber-600 font-medium">PENDING</span></div>
                         <div class="py-2 flex justify-between"><span>9. MANSUR SAADI</span> <span class="text-amber-600 font-medium">PENDING</span></div>
                         <div class="py-2 flex justify-between"><span>10. ANSAR PLAMA</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>11. DAUD U</span> <span class="text-amber-600 font-medium">PENDING</span></div>
-                        <div class="py-2 flex justify-between"><span>12. YAHYA SINWAR</span> <span class="text-amber-600 font-medium">PENDING</span></div>
+                        <div class="py-2 flex justify-between"><span>12. YAHYA SINWAR</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>13. AYAN</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>14. AMAN</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>15. FATHIMA</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>16. SADIK SAADI</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
-                        <div class="py-2 flex justify-between"><span>17. MANSUR MARKAZ NAGAR</span> <span class="text-amber-600 font-medium">PENDING</span></div>
+                        <div class="py-2 flex justify-between"><span>17. MANSUR MARKAZ NAGAR</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>18. MURSHIDA</span> <span class="text-green-600 font-bold">PAID ✅</span></div>
                         <div class="py-2 flex justify-between"><span>19. JAWAGAL KALANDAR</span> <span class="text-amber-600 font-medium">PENDING</span></div>
                         <div class="py-2 flex justify-between"><span>20. HYDER UH</span> <span class="text-amber-600 font-medium">PENDING</span></div>
                         <div class="py-2 flex justify-between"><span>21. SIRAJ MANSUR</span> <span class="text-amber-600 font-medium">PENDING</span></div>
-                        <div class="py-2 flex justify-between text-gray-400 italic"><span>22. AVAILABLE</span> <span>---</span></div>
+                        <div class="py-2 flex justify-between"><span>22. NIHAL KAIKAMBA</span> <span class="text-amber-600 font-medium">PENDING</span></div>
                         <div class="py-2 flex justify-between text-gray-400 italic"><span>23. AVAILABLE</span> <span>---</span></div>
                         <div class="py-2 flex justify-between text-gray-400 italic"><span>24. AVAILABLE</span> <span>---</span></div>
                         <div class="py-2 flex justify-between text-gray-400 italic"><span>25. AVAILABLE</span> <span>---</span></div>
@@ -109,7 +98,6 @@
                     </div>
                 </div>
 
-                <!-- Box 2: Months Progress -->
                 <div class="bg-white p-5 rounded-xl shadow border-t-4 border-amber-500">
                     <h3 class="text-lg font-bold text-amber-700 mb-3">📅 CHIT MONTHS</h3>
                     <div class="grid grid-cols-2 gap-2 text-sm text-center">
@@ -118,7 +106,6 @@
                     </div>
                 </div>
 
-                <!-- Box 3: Collected Fund Details -->
                 <div class="bg-white p-5 rounded-xl shadow border-t-4 border-emerald-500">
                     <h3 class="text-lg font-bold text-emerald-700 mb-3">💰 COLLECTED FUND DETAILS</h3>
                     <div class="space-y-2 text-sm">
@@ -128,16 +115,15 @@
                         </div>
                         <div class="flex justify-between">
                             <span>PAID MEMBERS:</span>
-                            <span class="font-bold text-green-600">11 MEMBERS</span>
+                            <span class="font-bold text-green-600">14 MEMBERS</span>
                         </div>
                         <div class="flex justify-between text-emerald-600 font-bold border-t pt-2 text-base">
                             <span>TOTAL COLLECTED AMOUNT:</span>
-                            <span>₹82,500</span>
+                            <span>₹1,05,000</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Box 4: Auction Winners -->
                 <div class="bg-white p-5 rounded-xl shadow border-t-4 border-rose-500">
                     <h3 class="text-lg font-bold text-rose-700 mb-3">🏆 AUCTION WINNERS</h3>
                     <table class="w-full text-sm text-left">
@@ -163,7 +149,6 @@
 
     </main>
 
-    <!-- JavaScript code -->
     <script>
         function showDashboard() {
             document.getElementById('infoPage').classList.add('hidden');
