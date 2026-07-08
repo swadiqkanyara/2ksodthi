@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 LAKHS CHIT FUND MANAGEMENT</title>
+    <!-- Tailwind CSS for styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -12,8 +13,10 @@
 <body class="bg-gray-100 text-gray-800 uppercase min-h-screen flex flex-col justify-between">
 
     <div class="w-full">
+        <!-- Header Section -->
         <header class="bg-emerald-700 text-white py-5 shadow-lg">
             <div class="container mx-auto px-4 text-center">
+                <!-- BOLD & ACCENTED BISMILLAH -->
                 <p class="text-2xl md:text-3xl font-black text-emerald-200 font-arabic tracking-wide mb-2 normal-case">
                     بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
                 </p>
@@ -23,8 +26,10 @@
 
         <main class="container mx-auto px-4 py-6 max-w-4xl mb-6">
             
+            <!-- FIRST PAGE: Scheme & Admin Info -->
             <div id="infoPage" class="space-y-6">
                 
+                <!-- Chit Fund Details -->
                 <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-600">
                     <h2 class="text-xl font-bold text-emerald-700 mb-3">📋 CHIT FUND DETAILS</h2>
                     <div class="space-y-3 text-gray-700 text-lg">
@@ -37,6 +42,7 @@
                     </div>
                 </div>
 
+                <!-- Organizer Details -->
                 <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-600">
                     <h2 class="text-xl font-bold text-emerald-700 mb-3">👤 ORGANIZER & CONTACT DETAILS</h2>
                     <div class="space-y-2 text-base">
@@ -46,6 +52,7 @@
                     </div>
                 </div>
 
+                <!-- Fixed Single Continue Button -->
                 <div class="text-center pt-2 pb-6">
                     <button onclick="showDashboard()" class="bg-emerald-600 text-white px-10 py-3.5 rounded-xl font-bold text-lg hover:bg-emerald-700 shadow-lg transform hover:scale-105 transition duration-200 cursor-pointer w-full max-w-xs mx-auto block">
                         CONTINUE →
@@ -54,20 +61,32 @@
             </div>
 
 
+            <!-- SECOND PAGE: Dashboard -->
             <div id="dashboardPage" class="hidden space-y-6">
                 
+                <!-- Back Button -->
                 <button onclick="showInfo()" class="text-emerald-600 font-semibold hover:underline flex items-center gap-1 cursor-pointer mb-2">
                     ← BACK TO MAIN INFO
                 </button>
 
+                <!-- Big Status Banner -->
                 <div class="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-6 rounded-2xl shadow-md text-center">
                     <p class="text-sm uppercase tracking-wider font-semibold text-amber-100 mb-1">CURRENT STATUS</p>
                     <h2 class="text-3xl md:text-4xl font-black">2ND MONTH CHIT AUCTION</h2>
                     <p class="text-xl font-medium text-amber-50 mt-1">📅 JULY 2026</p>
                 </div>
 
+                <!-- NEW FLASHY DRAW DATE BANNER -->
+                <div class="bg-rose-50 border-2 border-dashed border-rose-500 p-5 rounded-2xl text-center shadow-sm animate-pulse">
+                    <p class="text-rose-600 font-black tracking-widest text-sm mb-1">📢 NEXT LUCKY DRAW DATE</p>
+                    <h3 class="text-2xl md:text-4xl font-black text-rose-700 tracking-wide">📅 JULY 15, 2026</h3>
+                    <p class="text-xs text-rose-500 mt-1 font-semibold">ALL MEMBERS ARE REQUESTED TO CLEAR THEIR PENDING DUES BEFORE THE DRAW</p>
+                </div>
+
+                <!-- Grid Layout for Boxes -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     
+                    <!-- Box 1: Members List -->
                     <div class="bg-white p-5 rounded-xl shadow border-t-4 border-blue-500 flex flex-col">
                         <h3 class="text-lg font-bold text-blue-700 mb-3">👥 MEMBERS LIST (27 / 27)</h3>
                         <div class="overflow-y-auto max-h-80 pr-2 divide-y divide-gray-100 text-sm">
@@ -101,15 +120,17 @@
                         </div>
                     </div>
 
+                    <!-- Box 2: Months Progress -->
                     <div class="bg-white p-5 rounded-xl shadow border-t-4 border-amber-500">
                         <h3 class="text-lg font-bold text-amber-700 mb-3">📅 CHIT MONTHS PROGRESS</h3>
                         <div class="grid grid-cols-2 gap-2 text-sm text-center">
                             <div class="bg-amber-50 p-2 rounded border border-amber-200 font-medium">TOTAL: 27 MONTHS</div>
                             <div class="bg-green-50 p-2 rounded border border-green-200 font-bold text-green-700">CURRENT: MONTH 02</div>
                         </div>
-                        <p class="text-xs text-gray-500 mt-2 text-center">1ST MONTH (JUNE 2026) IS SUCCESSFULLY COMPLETED ✅</p>
+                        <p class="text-xs text-rose-600 font-bold mt-3 text-center bg-rose-50 p-1.5 rounded border border-rose-100">🎯 NEXT DRAW: JULY 15 (WEDNESDAY)</p>
                     </div>
 
+                    <!-- Box 3: Collected Fund Details -->
                     <div class="bg-white p-5 rounded-xl shadow border-t-4 border-emerald-500">
                         <h3 class="text-lg font-bold text-emerald-700 mb-3">💰 COLLECTED FUND DETAILS (MONTH 2)</h3>
                         <div class="space-y-2 text-sm">
@@ -128,6 +149,7 @@
                         </div>
                     </div>
 
+                    <!-- Box 4: Auction Winners -->
                     <div class="bg-white p-5 rounded-xl shadow border-t-4 border-rose-500">
                         <h3 class="text-lg font-bold text-rose-700 mb-3">🏆 AUCTION WINNERS HISTORY</h3>
                         <table class="w-full text-sm text-left">
@@ -156,6 +178,7 @@
         </main>
     </div>
 
+    <!-- JavaScript code -->
     <script>
         function showDashboard() {
             document.getElementById('infoPage').classList.add('hidden');
